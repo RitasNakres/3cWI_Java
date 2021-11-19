@@ -1,3 +1,4 @@
+package at.satir.dice;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -6,12 +7,11 @@ public class DiceGambleV2 {
     public static void main(String[] args) {
 
         boolean game = true;
-        int diceNumberPlayer = 0;
-        int diceNumberCom = 0;
+        int diceNumberPlayer;
+        int diceNumberCom;
         int loop = 0;
         int sumOfDicesPlayer = 0;
         int sumOfDicesComputer = 0;
-
 
 
         while (game) {
@@ -62,9 +62,6 @@ public class DiceGambleV2 {
             } else if (sumOfDicesPlayer == sumOfDicesComputer) {
                 System.out.println("Draw");
             }
-
-
-
 
 
         }
