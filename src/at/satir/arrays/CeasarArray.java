@@ -3,7 +3,7 @@ package at.satir.arrays;
 public class CeasarArray {
 
     public static void main(String[] args) {
-        String test = "Dies ist ein Satz!";
+        String test = "Paul";
         int key = 2;
 
 

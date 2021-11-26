@@ -1,3 +1,5 @@
+package at.satir.uebung;
+
 public class Main {
 
     public static void main(String[] args) {
