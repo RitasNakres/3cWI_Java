@@ -2,7 +2,7 @@ package at.satir.objects;
 
 public class Engine {
 
-    public enum TYPE {DIESEL, BENZIN}
+    public enum TYPE {DIESEL, BENZIN, ELEKTRO}
 
     private TYPE type;
     private int power;
