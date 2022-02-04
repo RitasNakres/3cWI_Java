@@ -12,7 +12,6 @@ public class Battery {
     }
 
 
-
     public void turnOn() {
         if (this.chargingStatus = false) {
             this.chargingStatus = true;
@@ -37,10 +36,5 @@ public class Battery {
     public double getBatteryStatus() {
         return batteryStatus;
     }
-
-
-
-
-
-    }
+}
 
