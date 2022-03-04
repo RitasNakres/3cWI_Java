@@ -1,6 +1,4 @@
 package at.satir.Remote;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,15 +21,10 @@ public class Remote {
 
     public void turnOff() {
         System.out.println("Kein Verbraucher angeschlossen");
-        System.out.println("Kein Verbraucher angeschlossen");
     }
 
 
     public void getAllBatteryStatus() {
         double getAllBatteryStatus = (this.battery1.getBatteryStatus() + this.battery2.getBatteryStatus()) / 2;
     }
-
-
-
-
 }
