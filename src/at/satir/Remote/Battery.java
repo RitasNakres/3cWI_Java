@@ -23,7 +23,7 @@ public class Battery {
     }
 
     public void loaderNotPluggedIn() {
-        System.out.println("Kein Verbraucher angeschlossen " + batteryStatus + "%");
+        System.out.println("Kein Verbraucher mehr angeschlossen, Batteriestand nach dem ausschalten: " + batteryStatus + "%");
     }
 
 }
