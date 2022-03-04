@@ -24,10 +24,11 @@ public class Remote {
 
     public double getAllBatteryStatus() {
         double batteryOneStatus = this.batteryOne.getBatteryStatus();
-        // this.batteryOne.setBatteryStatus(batteryOneStatus);
+        this.batteryOne.setBatteryStatus(batteryOneStatus);
         double batteryTwoStatus = this.batteryTwo.getBatteryStatus();
-        // this.batteryTwo.setBatteryStatus(batteryTwoStatus);
+        this.batteryTwo.setBatteryStatus(batteryTwoStatus);
         double averageBatteryStatus = (batteryOneStatus + batteryTwoStatus) / 2;
+        System.out.println("Der Mittelwert beider Batterien beträgt: " + averageBatteryStatus + "%");
         return averageBatteryStatus;
     }
 }
