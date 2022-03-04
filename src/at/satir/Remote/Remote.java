@@ -3,20 +3,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Remote {
-    private Battery battery1;
-    private Battery battery2;
+    private Battery batteryOne;
+    private Battery batteryTwo;
 
 
     public Remote(Battery battery1, Battery battery2) {
-        this.battery1 = battery1;
-        this.battery2 = battery2;
+        this.batteryOne = battery1;
+        this.batteryTwo = battery2;
     }
 
     public void turnOn() {
-        double newBatteryStatus1 = this.battery1.getBatteryStatus() - 5;
-        this.battery1.setBatteryStatus(newBatteryStatus1);
-        double newBatteryStatus2 = this.battery2.getBatteryStatus() -5;
-        this.battery2.setBatteryStatus(newBatteryStatus2);
+        double newBatteryStatus1 = this.batteryOne.getBatteryStatus() - 5;
+        this.batteryOne.setBatteryStatus(newBatteryStatus1);
+        double newBatteryStatus2 = this.batteryTwo.getBatteryStatus() -5;
+        this.batteryTwo.setBatteryStatus(newBatteryStatus2);
     }
 
     public void turnOff() {
@@ -25,6 +25,6 @@ public class Remote {
 
 
     public void getAllBatteryStatus() {
-        double getAllBatteryStatus = (this.battery1.getBatteryStatus() + this.battery2.getBatteryStatus()) / 2;
+        double getAllBatteryStatus = (this.batteryOne.getBatteryStatus() + this.batteryTwo.getBatteryStatus()) / 2;
     }
 }
