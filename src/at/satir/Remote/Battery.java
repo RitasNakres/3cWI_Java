@@ -21,15 +21,18 @@ public class Battery {
         return batteries;
     }
 
-
     public double getBatteryStatus() {
         return batteryStatus;
     }
 
-
-
     public void setBatteryStatus(double newBatteryStatus) {
+
         this.batteryStatus = newBatteryStatus;
+    }
+
+    public void givePower() {
+        this.batteryStatus = this.batteryStatus - 5;
+        System.out.println("Verbraucher angeschlossen");
     }
 }
 
