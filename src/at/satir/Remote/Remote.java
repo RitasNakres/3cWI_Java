@@ -7,9 +7,9 @@ public class Remote {
     private Battery batteryTwo;
 
 
-    public Remote(Battery battery1, Battery battery2) {
-        this.batteryOne = battery1;
-        this.batteryTwo = battery2;
+    public Remote(Battery batteryOne, Battery batteryTwo) {
+        this.batteryOne = batteryOne;
+        this.batteryTwo = batteryTwo;
     }
 
     public void turnOn() {
