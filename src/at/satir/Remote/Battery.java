@@ -34,5 +34,8 @@ public class Battery {
         this.batteryStatus = this.batteryStatus - 5;
         System.out.println("Verbraucher angeschlossen");
     }
+    public void loaderNotPluggedIn() {
+        System.out.println("Kein Verbraucher angeschlossen");
+    }
 }
 
