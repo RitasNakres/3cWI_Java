@@ -1,6 +1,5 @@
 package at.satir.Remote;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class Remote {
     private Battery batteryOne;
@@ -13,18 +12,22 @@ public class Remote {
     }
 
     public void turnOn() {
-        double newBatteryStatus1 = this.batteryOne.getBatteryStatus() - 5;
-        this.batteryOne.setBatteryStatus(newBatteryStatus1);
-        double newBatteryStatus2 = this.batteryTwo.getBatteryStatus() -5;
-        this.batteryTwo.setBatteryStatus(newBatteryStatus2);
+        this.batteryOne.givePower();
+        this.batteryTwo.givePower();
     }
 
     public void turnOff() {
-        System.out.println("Kein Verbraucher angeschlossen");
+        this.batteryOne.loaderNotPluggedIn();
+        this.batteryTwo.loaderNotPluggedIn();
     }
 
 
-    public void getAllBatteryStatus() {
-        double getAllBatteryStatus = (this.batteryOne.getBatteryStatus() + this.batteryTwo.getBatteryStatus()) / 2;
+    public double getAllBatteryStatus() {
+        double batteryOneStatus = this.batteryOne.getBatteryStatus();
+        // this.batteryOne.setBatteryStatus(batteryOneStatus);
+        double batteryTwoStatus = this.batteryTwo.getBatteryStatus();
+        // this.batteryTwo.setBatteryStatus(batteryTwoStatus);
+        double averageBatteryStatus = (batteryOneStatus + batteryTwoStatus) / 2;
+        return averageBatteryStatus;
     }
 }
