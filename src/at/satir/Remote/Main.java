@@ -10,7 +10,7 @@ public class Main {
         r1.turnOn();
         r1.turnOn();
         r1.getAllBatteryStatus();
-
+        r1.turnOff();
 
 
     }
