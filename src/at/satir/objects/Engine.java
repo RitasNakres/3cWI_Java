@@ -7,6 +7,7 @@ public class Engine {
     private TYPE type;
     private int power;
 
+
     public Engine(TYPE type, int power) {
         this.type = type;
         this.power = power;
