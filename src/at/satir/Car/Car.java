@@ -23,6 +23,7 @@ public class Car {
 
     public double getSellingPrice() {
         double newSellingPrice = this.basePrice * this.producer.getDiscount();
+        setBasePrice(newSellingPrice);
         System.out.println(newSellingPrice);
         return newSellingPrice;
     }
@@ -45,6 +46,9 @@ public class Car {
         System.out.println(newMileage);
     }
 
+    public void setBasePrice(double basePrice) {
+        this.basePrice = basePrice;
+    }
 
     public double getBaseConsumption() {
         return baseConsumption;
