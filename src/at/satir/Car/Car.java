@@ -32,25 +32,19 @@ public class Car {
         if (this.mileage >= 50000) {
             newFuelConsumption = this.baseConsumption + ((this.baseConsumption / 100) * 18);
             setBaseConsumption(newFuelConsumption);
-            System.out.println(newFuelConsumption);
+            System.out.println("Der Neue Spritverbrauch beträgt: " + newFuelConsumption + " Liter");
         } else
-        System.out.println("Das Auto verbaucht noch den Basisverbrauch");
+            System.out.println("Das Auto verbaucht noch den Basisverbrauch");
     }
 
 
     public void drive() {
         System.out.println("Ich bin am fahren");
-        double newMileage = this.mileage + 100;
+        double newMileage = this.mileage + 4000;
+        setMileage(newMileage);
         System.out.println(newMileage);
     }
 
-    public double getBasePrice() {
-        return basePrice;
-    }
-
-    public void setBasePrice(double basePrice) {
-        this.basePrice = basePrice;
-    }
 
     public double getBaseConsumption() {
         return baseConsumption;
@@ -60,11 +54,11 @@ public class Car {
         this.baseConsumption = baseConsumption;
     }
 
-    public double getMileage() {
-        return mileage;
-    }
-
     public void setMileage(double mileage) {
         this.mileage = mileage;
+    }
+
+    public double getMileage() {
+        return mileage;
     }
 }
