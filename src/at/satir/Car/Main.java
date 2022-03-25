@@ -10,11 +10,10 @@ public class Main {
         Producer p2 = new Producer("Audi", "Germany", 0.90);
 
         Car c1 = new Car(p1, e1, "red", 160,10,44000,12500);
-        Car c2 = new Car(p2, e2, "black", 190, 10,63000,20000);
-        
-        c1.getSellingPrice();
-        c2.getSellingPrice();
-        c1.newBaseComsumption();
+        Car c2 = new Car(p2, e2, "black", 190, 10,45000,20000);
+
+        c1.drive();
+        c2.drive();
 
     }
 }
