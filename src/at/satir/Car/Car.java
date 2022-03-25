@@ -27,6 +27,17 @@ public class Car {
         return newSellingPrice;
     }
 
+    public void newBaseComsumption() {
+        double newFuelConsumption;
+        if (this.mileage >= 50000) {
+            newFuelConsumption = this.baseConsumption + (this.baseConsumption * 0.902);
+            setBaseConsumption(newFuelConsumption);
+            System.out.println(newFuelConsumption);
+        } else
+            System.out.println(baseConsumption);
+            System.out.println("Das Auto verbaucht noch den Basisverbrauch");
+    }
+
     public String getColor() {
         return color;
     }
@@ -49,5 +60,21 @@ public class Car {
 
     public void setBasePrice(double basePrice) {
         this.basePrice = basePrice;
+    }
+
+    public double getBaseConsumption() {
+        return baseConsumption;
+    }
+
+    public void setBaseConsumption(double baseConsumption) {
+        this.baseConsumption = baseConsumption;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
     }
 }

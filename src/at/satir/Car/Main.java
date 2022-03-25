@@ -14,6 +14,7 @@ public class Main {
         
         c1.getSellingPrice();
         c2.getSellingPrice();
+        c1.newBaseComsumption();
 
     }
 }
