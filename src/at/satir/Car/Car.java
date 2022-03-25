@@ -8,15 +8,17 @@ public class Car {
     private double maximumSpeed;
     private double basePrice;
     private double baseConsumption;
+    private double mileage;
 
 
-    public Car(Producer producer, Engine engine, String color, double maximumSpeed, double baseConsumption, double basePrice) {
+    public Car(Producer producer, Engine engine, String color, double maximumSpeed, double baseConsumption, double mileage, double basePrice) {
         this.producer = producer;
         this.engine = engine;
         this.color = color;
         this.maximumSpeed = maximumSpeed;
         this.basePrice = basePrice;
         this.baseConsumption = baseConsumption;
+        this.mileage = mileage;
     }
 
     public double getSellingPrice() {
