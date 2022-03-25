@@ -17,8 +17,9 @@ public class Car {
         this.basePrice = basePrice;
     }
 
-    public double getSellingPrice(){
-        return basePrice * this.producer.getDiscount();
+    public double getSellingPrice() {
+        double newSellingPrice = basePrice * this.producer.getDiscount();
+        return newSellingPrice;
     }
 
     public String getColor() {
@@ -43,5 +44,5 @@ public class Car {
 
     public void setBasePrice(double basePrice) {
         this.basePrice = basePrice;
-}
+    }
 }
