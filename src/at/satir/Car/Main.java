@@ -9,8 +9,8 @@ public class Main {
         Producer p1 = new Producer("VW", "Germany", 0.95);
         Producer p2 = new Producer("Audi", "Germany", 0.90);
 
-        Car c1 = new Car(p1, e1, "red", 160, 10, 46000, 12500);
-        Car c2 = new Car(p2, e2, "black", 190, 10, 46000, 20000);
+        Car c1 = new Car(p1, e1, "red", 160, 6, 46000, 12500);
+        Car c2 = new Car(p2, e2, "black", 190, 8, 46000, 20000);
 
         c1.drive();
         c2.drive();

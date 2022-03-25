@@ -2,10 +2,13 @@ package at.satir.Car;
 
 public class Engine {
 
-    enum tankType {Diesel, Benzin}
-    private double horsepower;
+    public enum tankType {Diesel, Gasoline}
 
-    public Engine(double horsepower) {
-        this.horsepower = horsepower;
+    private double horsePower;
+    private tankType type;
+
+    public Engine(double horsePower, tankType type) {
+        this.horsePower = horsePower;
+        this.type = type;
     }
 }

@@ -13,4 +13,15 @@ public class Producer {
     }
 
 
+    public String getName() {
+        return name;
+    }
+
+    public double getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
+    }
 }
