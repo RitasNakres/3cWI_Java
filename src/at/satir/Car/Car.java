@@ -30,28 +30,18 @@ public class Car {
     public void newBaseComsumption() {
         double newFuelConsumption;
         if (this.mileage >= 50000) {
-            newFuelConsumption = this.baseConsumption + (this.baseConsumption * 0.902);
+            newFuelConsumption = this.baseConsumption + ((this.baseConsumption / 100) * 18);
             setBaseConsumption(newFuelConsumption);
             System.out.println(newFuelConsumption);
         } else
-            System.out.println(baseConsumption);
-            System.out.println("Das Auto verbaucht noch den Basisverbrauch");
+        System.out.println("Das Auto verbaucht noch den Basisverbrauch");
     }
 
-    public String getColor() {
-        return color;
-    }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getMaximumSpeed() {
-        return maximumSpeed;
-    }
-
-    public void setMaximumSpeed(double maximumSpeed) {
-        this.maximumSpeed = maximumSpeed;
+    public void drive() {
+        System.out.println("Ich bin am fahren");
+        double newMileage = this.mileage + 100;
+        System.out.println(newMileage);
     }
 
     public double getBasePrice() {
