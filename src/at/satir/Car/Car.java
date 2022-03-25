@@ -18,7 +18,8 @@ public class Car {
     }
 
     public double getSellingPrice() {
-        double newSellingPrice = basePrice * this.producer.getDiscount();
+        double newSellingPrice = this.basePrice * this.producer.getDiscount();
+        System.out.println(newSellingPrice);
         return newSellingPrice;
     }
 
