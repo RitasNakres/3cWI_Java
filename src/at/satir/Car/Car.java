@@ -1,5 +1,7 @@
 package at.satir.Car;
 
+import java.util.Scanner;
+
 public class Car {
 
     private Producer producer;
@@ -39,11 +41,11 @@ public class Car {
     }
 
 
-    public void drive() {
-        System.out.println("Ich bin am fahren");
-        double newMileage = this.mileage + 4000;
+    public void drive(double driveWay) {
+        System.out.println("I am driving");
+        double newMileage = this.mileage + driveWay;
         setMileage(newMileage);
-        System.out.println(newMileage);
+        System.out.println("Stopped driving, mileage now is at: " + newMileage);
     }
 
     public void setBasePrice(double basePrice) {
