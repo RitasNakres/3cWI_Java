@@ -35,9 +35,9 @@ public class Car {
         if (this.mileage >= 50000) {
             newFuelConsumption = this.baseConsumption + ((this.baseConsumption / 100) * 9.8);
             setBaseConsumption(newFuelConsumption);
-            System.out.println("Der Neue Spritverbrauch beträgt: " + newFuelConsumption + " Liter");
+            System.out.println("new fuel consumption amounts to: " + newFuelConsumption + " L");
         } else
-            System.out.println("Das Auto verbaucht noch den Basisverbrauch");
+            System.out.println("Car still uses its base consumption");
     }
 
 
