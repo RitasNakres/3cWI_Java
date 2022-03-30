@@ -12,9 +12,7 @@ public class Main {
         Car c1 = new Car(p1, e1, "red", 160, 6, 46000, 12500);
         Car c2 = new Car(p2, e2, "black", 190, 8, 46000, 20000);
 
-        c1.drive();
-        c2.drive();
-        c1.newBaseComsumption();
-        c2.newBaseComsumption();
+        c1.drive(200);
+        c1.getMileage();
     }
 }
