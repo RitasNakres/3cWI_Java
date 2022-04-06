@@ -1,5 +1,5 @@
 package at.satir.Calculator;
 
-public class RootCalculator {
+public class RootCalculator extends Calculator {
 
 }
