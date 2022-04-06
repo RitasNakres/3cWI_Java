@@ -1,14 +1,16 @@
 package at.satir.Calculator;
 
-import javax.xml.transform.Result;
 
 public class CalculatorMain {
     public static void main(String[] args) {
 
         Calculator c1 = new Calculator();
         ScientificCalculator sc1 = new ScientificCalculator();
-        sc1.sin(85);
-        double result = c1.multiply(10, 7);
-        System.out.println(result);
+        RootCalculator rc1 = new RootCalculator();
+        rc1.root(9);
+        sc1.cos(90);
+        sc1.sin(90);
+
+
     }
 }
