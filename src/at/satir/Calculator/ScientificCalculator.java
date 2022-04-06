@@ -2,13 +2,13 @@ package at.satir.Calculator;
 
 public class ScientificCalculator extends Calculator {
 
-    public void sin(double number) {
+    public double sin(double number) {
         double result = Math.sin(number);
-        System.out.println(result);
+        return result;
     }
 
-    public void cos(double number) {
+    public double cos(double number) {
         double result = Math.cos(number);
-        System.out.println(result);
+        return result;
     }
 }
