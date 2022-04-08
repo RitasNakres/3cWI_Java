@@ -11,5 +11,19 @@ public class LittleCountryAccount extends BaseAccount {
         this.accountManagement = accountManagement;
     }
 
+    public double getMembershipYears() {
+        return membershipYears;
+    }
 
+    public void setMembershipYears(double membershipYears) {
+        this.membershipYears = membershipYears;
+    }
+
+    public double getAccountManagement() {
+        return accountManagement;
+    }
+
+    public void setAccountManagement(double accountManagement) {
+        this.accountManagement = accountManagement;
+    }
 }
