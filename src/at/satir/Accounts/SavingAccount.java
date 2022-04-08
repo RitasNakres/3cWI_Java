@@ -1,6 +1,9 @@
 package at.satir.Accounts;
 
 public class SavingAccount extends BaseAccount {
+    private double savingYears;
+    private double rateOfInterest;
+
 
     @Override
     public double withdraw(double amount) {
