@@ -10,4 +10,17 @@ public class CreditAccount extends BaseAccount {
         super(balance);
         this.loanMonths = loanMonths;
     }
+
+    public double getLoanInterest() {
+        return loanInterest;
+    }
+
+    public double getCreditLimit() {
+        return creditLimit;
+    }
+
+    public double getLoanMonths() {
+        return loanMonths;
+    }
 }
+
