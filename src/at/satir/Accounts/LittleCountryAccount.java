@@ -5,10 +5,18 @@ public class LittleCountryAccount extends BaseAccount {
     private double membershipYears;
     private double accountManagement;
 
-    public LittleCountryAccount(double balance, double membershipYears, double accountManagement) {
+    public LittleCountryAccount(double balance, double membershipYears) {
         super(balance);
         this.membershipYears = membershipYears;
-        this.accountManagement = accountManagement;
+    }
+
+    public void accountKeepingCosts() {
+        double accountKeepingCosts = 0;
+        for (int i = 0; i < getMembershipYears(); i++) {
+            accountKeepingCosts = accountKeepingCosts + this.accountManagement;
+        }
+        System.out.println("Dein Ländlegirokonto kostete dich seit deiner Kontoeröffnung " + accountKeepingCosts + "€");
+        setBalance(getBalance() - accountKeepingCosts);
     }
 
     public double getMembershipYears() {
