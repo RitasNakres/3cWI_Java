@@ -3,17 +3,16 @@ package at.satir.Accounts;
 public class LittleCountryAccount extends BaseAccount {
 
     private double membershipYears;
-    private double accountManagement;
 
     public LittleCountryAccount(double balance, double membershipYears) {
         super(balance);
         this.membershipYears = membershipYears;
     }
 
-    public void accountKeepingCosts() {
+    public void accountKeepingCosts(double accountManagement) {
         double accountKeepingCosts = 0;
         for (int i = 0; i < getMembershipYears(); i++) {
-            accountKeepingCosts = accountKeepingCosts + this.accountManagement;
+            accountKeepingCosts = accountKeepingCosts + accountManagement;
         }
         System.out.println("Dein Ländlegirokonto kostete dich seit deiner Kontoeröffnung " + accountKeepingCosts + "€");
         setBalance(getBalance() - accountKeepingCosts);
@@ -25,13 +24,5 @@ public class LittleCountryAccount extends BaseAccount {
 
     public void setMembershipYears(double membershipYears) {
         this.membershipYears = membershipYears;
-    }
-
-    public double getAccountManagement() {
-        return accountManagement;
-    }
-
-    public void setAccountManagement(double accountManagement) {
-        this.accountManagement = accountManagement;
     }
 }
