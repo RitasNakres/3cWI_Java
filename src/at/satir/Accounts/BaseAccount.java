@@ -8,13 +8,13 @@ public class BaseAccount {
     }
 
     public void deposit(double amount) {
-        System.out.println("Deposited: " + amount);
         this.balance += amount;
     }
-    public double withdraw (double amount) {
-        System.out.println("Withdrawn: " + amount);
+
+    public double withdraw(double amount) {
         this.balance -= amount;
         return amount;
     }
+
 
 }
