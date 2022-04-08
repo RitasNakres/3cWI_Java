@@ -1,8 +1,17 @@
 package at.satir.Accounts;
 
 public class SavingAccount extends BaseAccount {
+
     private double savingYears;
     private double rateOfInterest;
+
+    public SavingAccount(double balance, double savingYears, double rateOfInterest) {
+        super(balance);
+        this.savingYears = savingYears;
+        this.rateOfInterest = rateOfInterest;
+    }
+
+
 
 
     @Override
