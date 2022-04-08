@@ -11,8 +11,13 @@ public class SavingAccount extends BaseAccount {
         this.rateOfInterest = rateOfInterest;
     }
 
+    public double getSavingYears() {
+        return savingYears;
+    }
 
-
+    public double getRateOfInterest() {
+        return rateOfInterest;
+    }
 
     @Override
     public double withdraw(double amount) {
