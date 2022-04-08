@@ -2,7 +2,7 @@ package at.satir.Accounts;
 
 public class CreditAccount extends BaseAccount {
 
-    private double loanMonths;
+     private double loanMonths;
 
     public CreditAccount(double balance, double loanMonths) {
         super(balance);

@@ -12,14 +12,14 @@ public class CheckingAccount extends BaseAccount {
         this.rateOfInterest = rateOfInterest;
     }
 
-    public void accountInterest(){
+    public void accountInterest() {
         double accountInterest = (this.getBalance() * this.rateOfInterest) * this.membershipYears;
         System.out.println("Du hast über die letzten " + this.membershipYears + " Jahre " + accountInterest + " Zinsen gezahlt.");
-        setBalance(getBalance()-accountInterest);
+        setBalance(getBalance() - accountInterest);
     }
 
     @Override
-    public double withdraw (double amount) {
+    public double withdraw(double amount) {
         if ((getBalance() - amount) > (limit * -1)) {
             System.out.println("Withdrawn: " + amount + "€");
             return super.withdraw(amount);

@@ -2,7 +2,7 @@ package at.satir.Accounts;
 
 public class BaseAccount {
 
-    protected double balance;
+     protected double balance;
 
     public BaseAccount(double balance) {
         this.balance = balance;

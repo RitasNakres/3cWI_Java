@@ -1,7 +1,7 @@
 package at.satir.Accounts;
 
 public class Main {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         CheckingAccount ca = new CheckingAccount(1500, 2, 4);
         ca.deposit(5000);
         ca.withdraw(5000);
