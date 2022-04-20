@@ -10,4 +10,21 @@ public class Figure {
         this.area = area;
     }
 
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getArea() {
+        double calculatedArea = area;
+        return calculatedArea;
+    }
+
 }
