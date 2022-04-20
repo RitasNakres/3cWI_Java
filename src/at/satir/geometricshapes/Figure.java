@@ -5,4 +5,9 @@ public class Figure {
     private double area;
 
 
+    public Figure(String name, double area) {
+        this.name = name;
+        this.area = area;
+    }
+
 }
