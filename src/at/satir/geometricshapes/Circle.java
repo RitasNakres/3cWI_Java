@@ -1,6 +1,6 @@
 package at.satir.geometricshapes;
 
-public class Circle extends Figure{
+public class Circle extends Figure {
 
     private double radius;
 
@@ -11,8 +11,8 @@ public class Circle extends Figure{
 
     @Override
     public double getArea() {
-        double pi = 3.14159265359;
-        double calculatedArea = 2 * this.radius * pi;
-        return calculatedArea;
+        double pi = Math.PI;
+        double newCalculatedArea = Math.pow(this.radius, 2) * pi;
+        return newCalculatedArea;
     }
 }

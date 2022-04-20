@@ -9,9 +9,8 @@ public class Cube extends Figure {
         this.lengthA = lengthA;
     }
 
-    @Override
-    public double getArea() {
-        double newCalculatedArea = 6 * Math.pow(this.lengthA,2);
+    @Override   public double getArea() {
+        double newCalculatedArea = 6 * Math.pow(this.lengthA, 2);
         return newCalculatedArea;
     }
 }

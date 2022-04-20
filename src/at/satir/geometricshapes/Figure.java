@@ -2,17 +2,17 @@ package at.satir.geometricshapes;
 
 public class Figure {
     private String name;
-    private double area;
 
 
-    public Figure(String name, double area) {
+    public Figure(String name) {
         this.name = name;
-        this.area = area;
+
     }
 
-    public void setArea(double area) {
-        this.area = area;
+    public double getArea() {
+        return -1;
     }
+
 
     public String getName() {
         return name;
@@ -22,9 +22,5 @@ public class Figure {
         this.name = name;
     }
 
-    public double getArea() {
-        double calculatedArea = area;
-        return calculatedArea;
-    }
 
 }

@@ -1,6 +1,6 @@
 package at.satir.geometricshapes;
 
-public class Rectangle extends Figure{
+public class Rectangle extends Figure {
 
     public double lengthA;
     public double lengthB;
