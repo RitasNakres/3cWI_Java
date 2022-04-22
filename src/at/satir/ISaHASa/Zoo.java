@@ -14,6 +14,10 @@ public class Zoo {
         this.animals = new ArrayList<>();
     }
 
+    public void addAnimal(Animal animal) {
+        this.animals.add(animal);
+    }
+
     // + -> public, - -> private
     public void makeShow() {
         System.out.println("The show just has started");
