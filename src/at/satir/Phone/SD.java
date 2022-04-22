@@ -11,4 +11,8 @@ public class SD {
         this.capacity = capacity;
         this.files = new ArrayList<>();
     }
+
+    public void save(PhoneFile file) {
+        files.add(file);
+    }
 }
