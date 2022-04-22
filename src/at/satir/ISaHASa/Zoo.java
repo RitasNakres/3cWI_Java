@@ -9,6 +9,11 @@ public class Zoo {
         this.name = name;
     }
 
+    // + -> public, - -> private
+    public void makeShow() {
+        System.out.println("The show just has started");
+    }
+
     public String getStreet() {
         return street;
     }
