@@ -18,6 +18,12 @@ public class Zoo {
         this.animals.add(animal);
     }
 
+    public void printAnimals() {
+        for (Animal animal: this.animals) {
+            System.out.println("Animal weight: " + animal.getWeight());
+        }
+    }
+
     // + -> public, - -> private
     public void makeShow() {
         System.out.println("The show just has started");
