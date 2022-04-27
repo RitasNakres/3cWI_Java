@@ -1,5 +1,7 @@
 package at.satir.Phone;
 
+import java.util.List;
+
 public class Phone {
     private SD sdCard;
     private Sim sim;
@@ -15,8 +17,17 @@ public class Phone {
         this.sim.doCall(number);
     }
 
-    public void takePicture(){
-       PhoneFile file = this.camera.takePicture();
-       this.sdCard.save(file);
+    public void takePicture() {
+        PhoneFile file = this.camera.takePicture();
+        this.sdCard.save(file);
+        System.out.println(file.getName());
+    }
+
+    public void printFiles() {
+        List<PhoneFile> files = this.sdCard.getFiles();
+        for (PhoneFile file : files) {
+            System.out.println(file.getName());
+        }
+
     }
 }
