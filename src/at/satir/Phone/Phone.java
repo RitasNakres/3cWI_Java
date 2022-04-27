@@ -14,4 +14,9 @@ public class Phone {
     public void doCall(String number) {
         this.sim.doCall(number);
     }
+
+    public void takePicture(){
+       PhoneFile file = this.camera.takePicture();
+       this.sdCard.save(file);
+    }
 }
