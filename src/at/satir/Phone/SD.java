@@ -15,4 +15,12 @@ public class SD {
     public void save(PhoneFile file) {
         files.add(file);
     }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public List<PhoneFile> getFiles() {
+        return files;
+    }
 }
