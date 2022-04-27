@@ -5,4 +5,9 @@ public class Phone {
     private Sim sim;
     private Camera camera;
 
+    public Phone(SD sdCard, Sim sim, Camera camera) {
+        this.sdCard = sdCard;
+        this.sim = sim;
+        this.camera = camera;
+    }
 }
