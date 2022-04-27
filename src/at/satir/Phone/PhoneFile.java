@@ -24,6 +24,6 @@ public class PhoneFile {
     }
 
     public String getInfo() {
-        return this.extension + ":" + this.name + ":" + this.size;
+        return this.extension + " | " + this.name + " | " + this.size;
     }
 }
