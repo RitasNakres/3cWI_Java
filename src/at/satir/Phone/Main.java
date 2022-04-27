@@ -8,6 +8,6 @@ public class Main {
         Camera camera = new Camera();
 
         Phone phone = new Phone(sdCard,sim,camera);
-
+        phone.doCall("06606438091");
     }
 }
