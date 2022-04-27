@@ -10,4 +10,8 @@ public class Phone {
         this.sim = sim;
         this.camera = camera;
     }
+
+    public void doCall(String number) {
+        this.sim.doCall(number);
+    }
 }
