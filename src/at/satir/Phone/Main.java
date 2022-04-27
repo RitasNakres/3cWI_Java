@@ -13,6 +13,8 @@ public class Main {
         phone.takePicture();
         phone.takePicture();
         phone.printFiles();
-
+        System.out.println(phone.getFreeSpace());
+        phone.takePicture();
+        System.out.println(phone.getFreeSpace());
     }
 }
