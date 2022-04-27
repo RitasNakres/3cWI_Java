@@ -16,4 +16,8 @@ public class Sim {
     public int getId() {
         return id;
     }
+
+    public void doCall(String number) {
+        System.out.println("Calling: " + number);
+    }
 }
