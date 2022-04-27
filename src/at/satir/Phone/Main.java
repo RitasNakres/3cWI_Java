@@ -12,6 +12,7 @@ public class Main {
 
         phone.takePicture();
         phone.takePicture();
+        phone.printFiles();
 
     }
 }
