@@ -23,4 +23,12 @@ public class SD {
     public List<PhoneFile> getFiles() {
         return files;
     }
+
+    public int getFreeSpace() {
+        int size = 0;
+        for (PhoneFile file : files) {
+            size += file.getSize();
+        }
+        return capacity - size;
+    }
 }
