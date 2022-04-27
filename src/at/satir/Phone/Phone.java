@@ -23,11 +23,16 @@ public class Phone {
         System.out.println(file.getName());
     }
 
-    public void printFiles() {
+    public List<PhoneFile> printFiles() {
         List<PhoneFile> files = this.sdCard.getFiles();
         for (PhoneFile file : files) {
             System.out.println(file.getInfo());
         }
-
+        return files;
     }
+
+        public int getFreeSpace() {
+            return this.sdCard.getFreeSpace();
+        }
+
 }
