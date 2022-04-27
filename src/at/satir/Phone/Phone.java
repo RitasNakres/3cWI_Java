@@ -26,7 +26,7 @@ public class Phone {
     public void printFiles() {
         List<PhoneFile> files = this.sdCard.getFiles();
         for (PhoneFile file : files) {
-            System.out.println(file.getName());
+            System.out.println(file.getInfo());
         }
 
     }
