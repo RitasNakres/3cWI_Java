@@ -1,13 +1,14 @@
 package at.satir.Phone;
 
-import at.satir.ISaHASa.Animal;
-
+import java.util.ArrayList;
 import java.util.List;
 
 public class Phone {
     private SD sdCard;
     private Sim sim;
     private Camera camera;
+
+
 
     public Phone(SD sdCard, Sim sim, Camera camera) {
         this.sdCard = sdCard;
@@ -33,16 +34,15 @@ public class Phone {
         return files;
     }
 
+    public void addCamera(Camera camera) {
+      this.camera.getCameras().add(camera);
+    }
+
     public List<Camera> printCameras() {
-        List<Camera> cameras = this.camera.getCamera();
+        List<Camera> cameras = this.camera.getCameras();
         for (Camera camera : cameras) {
             System.out.println(camera.getName());
         }
         return cameras;
     }
-
-    public void addCamera(Camera camera) {
-        this.printCameras().add(camera);
-    }
-
 }
