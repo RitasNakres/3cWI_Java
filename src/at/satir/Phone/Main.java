@@ -5,16 +5,12 @@ public class Main {
 
         Sim sim = new Sim(1, "06606669451");
         SD sdCard = new SD(100000);
-        Camera camera = new Camera();
+        Camera camera = new Camera(12,"Maincamera");
+        Camera frontCamera = new Camera(12,"Frontcamera");
+        PhoneFile file = new PhoneFile("jpeg",100,"pic1");
 
         Phone phone = new Phone(sdCard, sim, camera);
-        phone.doCall("06606438091");
-
-        phone.takePicture();
-        phone.takePicture();
-        phone.printFiles();
-        System.out.println(phone.getFreeSpace());
-        phone.takePicture();
-        System.out.println(phone.getFreeSpace());
+        phone.addCamera(frontCamera);
+        phone.printCameras();
     }
 }
