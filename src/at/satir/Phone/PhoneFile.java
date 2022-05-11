@@ -19,6 +19,10 @@ public class PhoneFile {
         return size;
     }
 
+    public void setSize(int size) {
+        this.size = size;
+    }
+
     public String getName() {
         return name;
     }
