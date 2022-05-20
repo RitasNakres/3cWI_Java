@@ -1,7 +1,6 @@
 package at.satir.Phone;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Camera {
     private int resolution;
@@ -15,10 +14,21 @@ public class Camera {
         this.cameras = new ArrayList<>();
     }
 
-    public PhoneFile takePicture() {
-        PhoneFile file = new PhoneFile("jpeg", 50, "pic " + fileNumber);
-        fileNumber++;
-        return file;
+    public PhoneFile takePicture(int size) {
+        if (size == 1) {
+            PhoneFile fileSmall = new PhoneFile("jpeg", 250, "pic " + fileNumber);
+            fileNumber++;
+            return fileSmall;
+        } else if (size == 2) {
+            PhoneFile fileMedium = new PhoneFile("jpeg", 500, "pic " + fileNumber);
+            fileNumber++;
+            return fileMedium;
+        } else if (size == 3) {
+            PhoneFile fileBig = new PhoneFile("jpeg", 1000, "pic " + fileNumber);
+            fileNumber++;
+            return fileBig;
+        }
+        return null;
     }
 
     public String getName() {

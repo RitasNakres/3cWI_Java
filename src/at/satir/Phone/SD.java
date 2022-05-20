@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SD {
+
     private int capacity; // Megapixel
     private List<PhoneFile> files;
 
@@ -13,7 +14,11 @@ public class SD {
     }
 
     public void save(PhoneFile file) {
-        files.add(file);
+        if (getFreeSpace() >= file.getSize()) {
+            files.add(file);
+        } else {
+            System.out.println("Not enough Space");
+        }
     }
 
     public void setCapacity(int capacity) {
@@ -30,16 +35,9 @@ public class SD {
 
     public int getFreeSpace() {
         int size = 0;
-
         for (PhoneFile phoneFile : files) {
             size += phoneFile.getSize();
         }
-        if (capacity <= size) {
-            System.out.println("Can't take picture");
-            setCapacity(size);
-        } else {
-            return capacity - size;
-        }
-        return capacity;
+        return capacity - size;
     }
 }

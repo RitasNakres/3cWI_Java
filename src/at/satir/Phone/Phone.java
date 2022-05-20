@@ -1,13 +1,12 @@
 package at.satir.Phone;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Phone {
     private SD sdCard;
     private Sim sim;
     private Camera camera;
-
+    private int pictureSize; // 1 small, 2 medium, 3 big
 
 
     public Phone(SD sdCard, Sim sim, Camera camera) {
@@ -20,8 +19,8 @@ public class Phone {
         this.sim.doCall(number);
     }
 
-    public void takePicture() {
-        PhoneFile file = this.camera.takePicture();
+    public void takePicture(int pictureSize) {
+        PhoneFile file = this.camera.takePicture(pictureSize);
         this.sdCard.save(file);
         System.out.println(file.getName());
     }
@@ -35,7 +34,7 @@ public class Phone {
     }
 
     public void addCamera(Camera camera) {
-      this.camera.getCameras().add(camera);
+        this.camera.getCameras().add(camera);
     }
 
     public List<Camera> printCameras() {

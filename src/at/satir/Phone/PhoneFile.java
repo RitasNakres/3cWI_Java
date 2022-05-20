@@ -1,6 +1,7 @@
 package at.satir.Phone;
 
 public class PhoneFile {
+
     private String extension;
     private int size; //Megabyte
     private String name;
